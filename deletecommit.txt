@@ -2,3 +2,13 @@
 commit
 git rm deletecommit.txt
 git checout HEAD -- deletecommit.txt
+
+删除有两种方式：
+1、工作区内"rm 文件名"，然后"git rm 文件名"，然后"git commit -m '备注'"
+2、直接使用"git rm 文件名"，然后"git commit -m '备注'"
+实验结果：
+1、工作区内"rm 文件名" 只是删除工作区内容，暂存区内容还是在的，(这里说法有误，已经commit了之后，暂存区是没有的，已经存在 与版本库了，该命令其实是将版本库的文件更新拿下来）。)
+      在"git rm 文件名"操作之前可通过"git checkout --文件名"从暂存区进行恢复。
+2、"git rm 文件名"是既删除工作区内容也删除暂存区内容的，
+     所以在"git commit -m '备注'"操作之前可以通过"git checkout HEAD -- 文件名"从版本库进行恢复，
+当然你要是直接用git reset HEAD^也行但是可能会影响你其他修改但是未提交的其他内容的。
