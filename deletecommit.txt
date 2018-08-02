@@ -1,0 +1,4 @@
+﻿add 
+commit
+git rm deletecommit.txt
+git checout HEAD -- deletecommit.txt
