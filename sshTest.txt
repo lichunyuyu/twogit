@@ -1,0 +1,453 @@
+﻿
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-keygen -t rsa -C "760254157@qq.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/vtstar/.ssh/id_rsa):
+/c/Users/vtstar/.ssh/id_rsa already exists.
+Overwrite (y/n)? n
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add origin git@github.com:fieldNight41/learngitPro.git
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '13.250.177.223' to t            he list of known hosts.
+ERROR: Permission to fieldNight41/learngitPro.git denied to lichunyuyu.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ^C
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add origin git@github.com:fieldNight41/learngitPro.git
+fatal: remote origin already exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git push -u origin master
+ERROR: Permission to fieldNight41/learngitPro.git denied to lichunyuyu.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ^C
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh
+usage: ssh [-1246AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+           [-D [bind_address:]port] [-E log_file] [-e escape_char]
+           [-F configfile] [-I pkcs11] [-i identity_file]
+           [-J [user@]host[:port]] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-p port] [-Q query_option] [-R address]
+           [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           [user@]hostname [command]
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh
+usage: ssh [-1246AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+           [-D [bind_address:]port] [-E log_file] [-e escape_char]
+           [-F configfile] [-I pkcs11] [-i identity_file]
+           [-J [user@]host[:port]] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-p port] [-Q query_option] [-R address]
+           [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           [user@]hostname [command]
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-keygen -t rsa -C "760254157@qq.com" -f ~/.ssh/aysee
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/vtstar/.ssh/aysee.
+Your public key has been saved in /c/Users/vtstar/.ssh/aysee.pub.
+The key fingerprint is:
+SHA256:KUrhaKLyHFwuENstgeMeNM3Z/mwtBWWrYBoSvF3bmuQ 760254157@qq.com
+The key's randomart image is:
++---[RSA 2048]----+
+|..       o       |
+| o+ o.  o .      |
+|+++=o+o. .       |
+|o*o*=+..o.       |
+|+o=.B.+.S.       |
+|o=.= Eo.o        |
+|o.+ o  = .       |
+|.o o  . .        |
+|  o              |
++----[SHA256]-----+
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com:fieldNight41/learngitPro.git
+ssh: Could not resolve hostname github.com:fieldnight41/learngitpro.git: Name or             service not known
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add -l
+Could not open a connection to your authentication agent.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-agent bash
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add -l
+The agent has no identities.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add -D
+All identities removed.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/vtstar/.ssh/id_rsa (/c/Users/vtstar/.ssh/id_rsa)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add ~/.ssh/aysee
+Identity added: /c/Users/vtstar/.ssh/aysee (/c/Users/vtstar/.ssh/aysee)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com:fieldNight41/learngitPro.git
+ssh: Could not resolve hostname github.com:fieldnight41/learngitpro.git: Name or             service not known
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide sh            ell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add origintest git@github.com:fieldNight41/learngitPro.git
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide sh            ell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Warning: Permanently added the RSA host key for IP address '13.229.188.59' to th            e list of known hosts.
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide sh            ell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-T git@aysee.github.com
+bash: ssh-T: command not found
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@aysee.github.com
+ssh: connect to host aysee.github.com port 22: Connection timed out
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@aysee.github.com
+ssh: connect to host aysee.github.com port 22: Connection timed out
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@twogit.github.com
+ssh: connect to host twogit.github.com port 22: Connection timed out
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add -l
+2048 SHA256:ut7SwMzs+dCjGaESQHyBSJOvDu+mTMjoe3JDVXrONeA /c/Users/vtstar/.ssh/id_            rsa (RSA)
+2048 SHA256:KUrhaKLyHFwuENstgeMeNM3Z/mwtBWWrYBoSvF3bmuQ /c/Users/vtstar/.ssh/ays            ee (RSA)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@ayseeHN.github.com
+ssh: connect to host ayseehn.github.com port 22: Connection timed out
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@aysee.github.com
+ssh: connect to host aysee.github.com port 22: Connection timed out
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@101.231.133.237
+Welcome to GitLab, 李春玉!
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@13.250.177.223
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@13.229.188.59
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com,192.30.255.113
+ssh: Could not resolve hostname github.com,192.30.255.113: Name or service not known
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@|1|WbLDLawznMQQma5arriKicwsBy4=|4W4lxKX+uWccDsf7vX9304UM1fE=
+bash: 1: command not found
+bash: 4W4lxKX+uWccDsf7vX9304UM1fE=: command not found
+ssh: connect to host  port 22: Connection refused
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+ssh: connect to host  port 22: Connection refused
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@101.231.133.233
+ssh: connect to host 101.231.133.233 port 22: Connection timed out
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@192.30.255.113
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@101.231.133.237
+Welcome to GitLab, 李春玉!
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@13.250.177.223
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@13.229.188.59
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add testorigin it@github.com
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add testorigin git@github.com:fieldNight41/learngitPro.git
+fatal: remote testorigin already exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git push -u testorigin master
+fatal: 'it@github.com' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add origin git@github.com:fieldNight41/learngitPro.git
+fatal: remote origin already exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git push -u origin master
+ERROR: Permission to fieldNight41/learngitPro.git denied to lichunyuyu.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote -v
+origin  git@github.com:fieldNight41/learngitPro.git (fetch)
+origin  git@github.com:fieldNight41/learngitPro.git (push)
+origintest      git@github.com:fieldNight41/learngitPro.git (fetch)
+origintest      git@github.com:fieldNight41/learngitPro.git (push)
+testorigin      it@github.com (fetch)
+testorigin      it@github.com (push)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote rm testorigin
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote rm origintest
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote -v
+origin  git@github.com:fieldNight41/learngitPro.git (fetch)
+origin  git@github.com:fieldNight41/learngitPro.git (push)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Warning: Permanently added the RSA host key for IP address '52.74.223.119' to the list of known hosts.
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ^C
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ cat /etc/hosts
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#       127.0.0.1       localhost
+#       ::1             localhost
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote rm origin
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote -v
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add origin git@github.com:fieldNight41/learngit.git
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git push -u origin master
+ERROR: Permission to fieldNight41/learngit.git denied to lichunyuyu.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-keygen -t rsa -C "fieldNight41"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/vtstar/.ssh/id_rsa):
+/c/Users/vtstar/.ssh/id_rsa already exists.
+Overwrite (y/n)? n
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-keygen -t rsa -C "fieldNight41" -f ~/.ssh/fieldNight41
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/vtstar/.ssh/fieldNight41.
+Your public key has been saved in /c/Users/vtstar/.ssh/fieldNight41.pub.
+The key fingerprint is:
+SHA256:ETt3P1Tkcd7rzGgjE/MucAtpeU5Q1GDpDS8JdXMJ2p8 fieldNight41
+The key's randomart image is:
++---[RSA 2048]----+
+|        . o=++.+=|
+|         +.++.o=+|
+|        + =.*.. +|
+|         = = =. o|
+|        S +o. oE |
+|         * ++ =. |
+|        . Bo.= + |
+|           += .  |
+|            ..   |
++----[SHA256]-----+
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add -l
+2048 SHA256:ut7SwMzs+dCjGaESQHyBSJOvDu+mTMjoe3JDVXrONeA /c/Users/vtstar/.ssh/id_rsa (RSA)
+2048 SHA256:KUrhaKLyHFwuENstgeMeNM3Z/mwtBWWrYBoSvF3bmuQ /c/Users/vtstar/.ssh/aysee (RSA)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@4github.com
+ssh: Could not resolve hostname 4github.com: Name or service not known
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@3github.com
+ssh: Could not resolve hostname 3github.com: Name or service not known
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@2github.com
+ssh: Could not resolve hostname 2github.com: Name or service not known
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add -D
+All identities removed.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/vtstar/.ssh/id_rsa (/c/Users/vtstar/.ssh/id_rsa)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add ~/.ssh/id_rsa_personal
+Enter passphrase for /c/Users/vtstar/.ssh/id_rsa_personal:
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add ~/.ssh/id_rsa_personal
+Enter passphrase for /c/Users/vtstar/.ssh/id_rsa_personal:
+Identity added: /c/Users/vtstar/.ssh/id_rsa_personal (/c/Users/vtstar/.ssh/id_rsa_personal)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add ~/.ssh/aysee
+Identity added: /c/Users/vtstar/.ssh/aysee (/c/Users/vtstar/.ssh/aysee)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add ~/.ssh/fieldNight41
+Identity added: /c/Users/vtstar/.ssh/fieldNight41 (/c/Users/vtstar/.ssh/fieldNight41)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh-add -l
+2048 SHA256:ut7SwMzs+dCjGaESQHyBSJOvDu+mTMjoe3JDVXrONeA /c/Users/vtstar/.ssh/id_rsa (RSA)
+4096 SHA256:6PCt+G32KBHIAuigD9uor6OJp5swEmlCz+MhHZDt3a8 /c/Users/vtstar/.ssh/id_rsa_personal (RSA)
+2048 SHA256:KUrhaKLyHFwuENstgeMeNM3Z/mwtBWWrYBoSvF3bmuQ /c/Users/vtstar/.ssh/aysee (RSA)
+2048 SHA256:ETt3P1Tkcd7rzGgjE/MucAtpeU5Q1GDpDS8JdXMJ2p8 /c/Users/vtstar/.ssh/fieldNight41 (RSA)
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add testorigin git@fieldNight41.github.com:fieldNight41/learngit.git
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@github.com
+Hi lichunyuyu! You've successfully authenticated, but GitHub does not provide shell access.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add testorigin git@fieldNight41.github.com:fieldNight41/learngit.git
+fatal: remote testorigin already exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git push -u testorigin master
+ssh: connect to host fieldnight41.github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh git@t@
+
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh git@fieldNight41.github.com
+ssh: connect to host fieldnight41.github.com port 22: Connection timed out
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ^C
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh git@fieldNight41.github.com
+ssh: connect to host fieldnight41.github.com port 22: Connection timed out
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ ssh -T git@fieldNight41.github.com
+ssh: connect to host fieldnight41.github.com port 22: Connection timed out
+
+vts
+
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git remote add learn git@github.com:lichunyuyu/twogit.git
+
+vtstar@DESKTOP-PUK0NQ9 MINGW64 /d/MyGitHubProjects/learngit (master)
+$ git push -u learn master
+Counting objects: 45, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (45/45), 10.37 KiB | 0 bytes/s, done.
+Total 45 (delta 22), reused 0 (delta 0)
+remote: Resolving deltas: 100% (22/22), done.
+To github.com:lichunyuyu/twogit.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from learn.
